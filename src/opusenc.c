@@ -372,7 +372,7 @@ static OggOpusEnc *ope_encoder_create_callbacks_impl(const OpusEncCallbacks *cal
   int ret;
   if (family != 0 && family != 1 &&
 #ifdef OPUS_HAVE_OPUS_PROJECTION_H
-      family != 2 && family != 3 &&
+      family != 2 && family != 3 && family != 252 &&
 #endif
       family != 255 && family != -1) {
     if (error) {
